@@ -43,6 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <PrivyProvider
         appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID || ""}
         config={{
+          loginMethods: ['telegram'],
           embeddedWallets: {
             createOnLogin: "all-users",
           },
